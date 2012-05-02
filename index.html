@@ -5,58 +5,109 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<title>athletic.js - Embed Athletic Club de Bilbao flag in any webpage</title>
+	<meta name="description" content="athletic.js: Embed Athletic Club de Bilbao flag in any webpage">
+	<meta name="author" content="Alfredo Llanos @biojazzard">
+	<meta name="viewport" content="width=device-width">
+	<!-- open graph meta tags -->
+	<meta property="og:title" content="Beatbar - media player that beats in the browser address bar" />
+	<meta property="og:description" content="The big O inside the address bar represents the current mouse position. Move the mouse pointer on the document to left and right to move O in the corresponding directions. When it appears over the controls, click the mouse button to take an action." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://tallerdelsoho.es/athletic.js/" />
+	<meta property="og:image" content="http://tallerdelsoho.es/athletic.js/img/apple-touch-icon-144x144-precomposed.png" />
+	<meta property="fb:admins" content="586500125" />
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+			 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
-  <meta name="description" content="">
+	<title></title>
+	<meta name="description" content="">
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+	<!-- All JavaScript at the bottom, except this Modernizr build.
+			 Modernizr enables HTML5 elements & feature detects for optimal performance.
+			 Create your own custom Modernizr build: www.modernizr.com/download/ -->
+	<script src="js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
-  <!-- Add your site or application content here -->
-
-
-  <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//localhost/_git/athletic/js/athletic.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","athletic-js");
+  <!-- facebook SDK-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=230145113756041";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- twitter SDK -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+			 chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<div class="container">
+		<div class='masthead'>
+			<img id='arrow' src='img/arrow.png' width='174' height='199' />
+			<h1>Para incluir el "Aupa Athletic!" en tu página web o blog</h1>
+			<p>Copia y pega el siguiente código en tu html o plantilla:</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class='row'>
+			<div class='span6 offset3'>
+			<textarea class="embd span6" rows="6"><script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//tallerdelsoho.es/athletic.js/js/athletic.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","athletic-js");
 </script>
-  <!-- end scripts -->
+			</textarea>
+   		</div>
+	</div>
+	<div class="container">
+		<div class='social row'>
+			<div class='span1 offset3 fblike'>
+				<fb:like send="false" layout="button_count" width="200" show_faces="false"></fb:like>
+			</div>
+			<div class='span2 tweetbtton'>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://biojazzard.github.com/athletic.js" data-text="athletic.js - Embed Athletic Club de Bilbao flag in any webpage" data-via="biojazzard" data-related="biojazzard">Tweet</a>
+			</div>
+			<div class='span2 githubbtton'>
+				<iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=biojazzard&amp;type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="132px" height="20px"></iframe>
+			</div>
+			<div class='span1 githubbtton'>
+				<iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=biojazzard&amp;repo=athletic.js&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+			</div>
+	</div>
+    <div class="footer">
+    	<p>
+    		<a href="https://twitter.com/#!/biojazzard">@biojazzard</a> | 
+    		<a href="https://tallerdelsoho.es/athletic.js/">Taller del SOHO</a>
+    	</p>
+    </div>
+	<!-- Le JS -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+	<!-- LE concat JS -->
+	<script src="js/script.js"></script>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//tallerdelsoho.es/athletic.js/js/athletic.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","athletic-js");
+</script>
+	<!-- end scripts -->
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 </body>
 </html>

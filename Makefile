@@ -49,8 +49,17 @@ style:
 #
 
 script:
-	cat src/js/js.script.js src/js/js.script.js > js/max/script.js
-	uglifyjs -nc js/max/script.js > js/min/script.min.js
+	cat src/js/js.plugins.js src/js/js.script.js > js/script.js
+	uglifyjs -nc js/script.js > js/script.min.js
+	echo "JS NON BS done!"; \
+
+#
+# Script Build
+#
+
+athletic:
+	cat src/js/athletic.js > js/athletic.max.js
+	uglifyjs -nc js/athletic.max.js > js/athletic.js
 	echo "JS NON BS done!"; \
 
 #
