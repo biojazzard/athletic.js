@@ -8,7 +8,7 @@
 		parentElem, firstCh, mainHolder;
 
 	this.ath = {
-		layer : '<div id="<%=red.id%>" class="<%=red.classNames%>" style="<%=red.style%>"><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=texto.style%>">Aupa Athletic!</div></div>',
+		layer : '<div id="<%=red.id%>" class="<%=red.classNames%>" style="<%=red.style%>"><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=texto.style%>">Aupa Athletic!</div><a style="<%=about.style%>" href="http://biojazzard.github.com/athletic.js/"> � </a></div>',
 		attrs : {
 			holder: {
 				id: 'athletic-id',
@@ -25,6 +25,9 @@
 			},
 			texto: {
 				style: 'position:absolute;top:0px;width: 100%;line-height: 36px;color:black;font-size: 30px;font-weight:800;font-family:Mistral;text-shadow: #FEFEFE 1px 1px 1px'
+			},
+			about: {
+				style: 'position:absolute;top:0px;right:0px;line-height: 36px;color:black;font-size: 24px;font-weight:800;text-decoration:none;text-shadow: #FEFEFE 1px 1px 1px;'
 			}
 		}
 	};
