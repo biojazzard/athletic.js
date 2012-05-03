@@ -10,10 +10,6 @@
 	this.ath = {
 		layer : '<div id="<%=red.id%>" class="<%=red.classNames%>" style="<%=red.style%>"><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=white.style%>"></div><div style="<%=texto.style%>">Aupa Athletic!</div><a style="<%=about.style%>" href="http://biojazzard.github.com/athletic.js/"> � </a></div>',
 		attrs : {
-			holder: {
-				id: 'athletic-id',
-				style: 'position:absolute;left:0px;top:0px;z-index: 9999;'
-			},
 			red: {
 				id: 'red-id',
 				classNames: 'red-stripe',
@@ -71,8 +67,14 @@
 
 	// Create THE element
 	mainHolder = document.createElement("div");
-	mainHolder.id = ath.attrs.holder.id;
-	mainHolder.style = ath.attrs.holder.style;
+	mainHolder.id = "athletic-id";
+	mainHolder.style.position = "relative";
+	mainHolder.style.height = "36px";
+	mainHolder.style.top = "0px";
+	mainHolder.style.left = "0px";
+	mainHolder.style.right = "0px";
+	mainHolder.style.zIndex = "10001";
+
 	mainHolder.innerHTML = tmpl(ath.layer, ath.attrs);
 
 	// Insert the new element before the first child
